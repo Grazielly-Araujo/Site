@@ -1,0 +1,106 @@
+:root{
+    --main-color: rgb(6,239,72);
+    --hover-color: rgb(239,116,97);
+    --letter-color: rgb(9,212,46);
+    --text-font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main{
+    background-color: rgb(0, 42, 79);
+    min-width: 250px; /*  largura minima */
+    max-width: 600px; /* largura maxima */
+    height: 500px;
+    min-height: 500px;/* altura minima */
+    max-height: 500px; /* altura maxima */
+    margin: 10px auto 10px; /* Espaço entre elementos// auto centraliza // não sei  */
+    border: 1px solid black; /*  largura da borda/ tipo da borda / cor */
+    border-radius: 25px;
+    font-family: var(--text-font-family);
+    display: flex;  /* config de alinhamento de elemento  */
+    flex-direction: column; /* config em coluna */
+    justify-content: space-between;
+    align-items:  center;
+
+}
+
+section{
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input{
+    border: 0px;
+    border-radius: 20px;
+    width: 70%;
+    height: 25%;
+
+}
+
+input:focus{ /* focus altera quando o objeto é selecionado (clicado) */
+    outline: none !important; /* contorno  */
+    border: 1px solid #ddd;
+}
+
+legend{
+    font-family: var(--text-font-family);
+    color: var(--letter-color);
+    font-style: italic;
+}
+
+.LoginItemContainer{
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;  /* config em linha */
+    justify-content: center;
+    align-items: center;
+}
+button{
+    width: 50%;
+    height: 10%;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    color: white;
+    background-color: var(--main-color);
+}
+button:hover{
+    background-color: var(--hover-color);
+
+}
+button:focus{
+    outline: none !important;
+    background-color: var(--hover-color);
+}
+
+.senha{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+a{
+    font-family: var(--text-font-family);
+    color: var(--letter-color);
+}
+a:hover{
+    background-color: var(--hover-color);
+}
+a:focus{
+    outline: none !important;
+    background-color: var(--hover-color);
+}
+
+footer{
+    clear: both;
+    width: inherit;
+    margin: 0 auto;
+    font-size: 0.75em;
+    text-align: center;
+}
